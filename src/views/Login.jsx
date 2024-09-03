@@ -17,7 +17,7 @@ import InputAdornment from '@mui/material/InputAdornment'
 import Checkbox from '@mui/material/Checkbox'
 import Button from '@mui/material/Button'
 import FormControlLabel from '@mui/material/FormControlLabel'
-
+import logoimage from "../../public/images/logos/logo.jpg"
 // Component Imports
 import Logo from '@components/layout/shared/Logo'
 import Illustrations from '@components/Illustrations'
@@ -82,7 +82,6 @@ const Login = ({ mode }) => {
       alert("Invalid Register No or Password. Please try again.")
     }
   }
-
   return (
     <div className='flex flex-col justify-center items-center min-bs-[100dvh] relative p-6'>
       <Card className='flex flex-col sm:is-[450px]'>
@@ -90,6 +89,9 @@ const Login = ({ mode }) => {
           <Link href={{pathname: '/' }} className='flex justify-center items-center mbe-6'>
             {/* <Logo /> */}
             App Name
+            
+            {/* <img src={require('../assets/logo.jpg')} /> */}
+
           </Link>
           <div className='flex flex-col gap-5'>
             <div>
