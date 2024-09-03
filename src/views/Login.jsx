@@ -17,7 +17,6 @@ import InputAdornment from '@mui/material/InputAdornment'
 import Checkbox from '@mui/material/Checkbox'
 import Button from '@mui/material/Button'
 import FormControlLabel from '@mui/material/FormControlLabel'
-import logoimage from "../../public/images/logos/logo.jpg"
 // Component Imports
 import Logo from '@components/layout/shared/Logo'
 import Illustrations from '@components/Illustrations'
@@ -90,7 +89,6 @@ const Login = ({ mode }) => {
             {/* <Logo /> */}
             App logo
             
-            {/* <img src={require('../assets/logo.jpg')} /> */}
 
           </Link>
           <div className='flex flex-col gap-5'>
