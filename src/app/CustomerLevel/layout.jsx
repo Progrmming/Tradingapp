@@ -16,7 +16,7 @@ const Layout = async ({ children }) => {
     <Providers direction={direction}>
       <LayoutWrapper
         verticalLayout={
-          <VerticalLayout navbar={<Navbar />} footer={<VerticalFooter />} >
+          <VerticalLayout  navbar={<Navbar />} footer={<VerticalFooter />} >
             {children}
           </VerticalLayout>
         }

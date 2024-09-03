@@ -2,9 +2,9 @@ import React from 'react'
 
 function CustomerLevel() {
   return (
-    <div >
+    <div style={{width:"100%"}} >
 
-<div class="tree" >
+<div class="tree" style={{width:"100%"}} >
         <ul >
           <li>
             <a href="#">Node1<br />(A)</a>
