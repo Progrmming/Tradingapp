@@ -18,7 +18,6 @@ import Checkbox from '@mui/material/Checkbox'
 import Button from '@mui/material/Button'
 import FormControlLabel from '@mui/material/FormControlLabel'
 // Component Imports
-import Logo from '@components/layout/shared/Logo'
 import Illustrations from '@components/Illustrations'
 
 // Config Imports
