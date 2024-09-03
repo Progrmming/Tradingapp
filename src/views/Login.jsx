@@ -17,13 +17,14 @@ import InputAdornment from '@mui/material/InputAdornment'
 import Checkbox from '@mui/material/Checkbox'
 import Button from '@mui/material/Button'
 import FormControlLabel from '@mui/material/FormControlLabel'
-// Component Imports
+import logoimage from "../../public/images/logos/logo.jpg"
+
+import Logo from '@components/layout/shared/Logo'
 import Illustrations from '@components/Illustrations'
 
-// Config Imports
+
 import themeConfig from '@configs/themeConfig'
 
-// Hook Imports
 import { useImageVariant } from '@core/hooks/useImageVariant'
 
 const Login = ({ mode }) => {
