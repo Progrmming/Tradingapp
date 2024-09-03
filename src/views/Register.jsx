@@ -43,7 +43,7 @@ const Register = ({ mode }) => {
         <CardContent className='p-6 sm:!p-12'>
           <Link href={{pathname:'/'}} className='flex justify-center items-start mbe-6'>
             {/* <Logo /> */}
-            APP Name
+            APP logo
           </Link>
           <Typography variant='h4'>Register</Typography>
           <div className='flex flex-col gap-5'>

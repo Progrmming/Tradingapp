@@ -88,7 +88,7 @@ const Login = ({ mode }) => {
         <CardContent className='p-6 sm:!p-12'>
           <Link href={{pathname: '/' }} className='flex justify-center items-center mbe-6'>
             {/* <Logo /> */}
-            App Name
+            App logo
             
             {/* <img src={require('../assets/logo.jpg')} /> */}
 
