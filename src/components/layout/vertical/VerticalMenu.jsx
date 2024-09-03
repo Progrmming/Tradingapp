@@ -107,7 +107,7 @@ const userinfos = JSON.parse(localStorage.getItem("Userinfo"))
         {Userinfo.UserType === 'User'  ?  (
           <>
      
-        <MenuItem href='/UnderMaintenance'>Customer Level</MenuItem>
+        <MenuItem href='/CustomerLevel'>Customer Level</MenuItem>
         <MenuItem href='/Coindetails'>Coins Detail</MenuItem>
         <MenuItem href='/UnderMaintenance'>Tree Structure</MenuItem>
   
@@ -116,7 +116,7 @@ const userinfos = JSON.parse(localStorage.getItem("Userinfo"))
         ):
         <> 
         <MenuItem href='/newRegistration'>New Registration</MenuItem>
-        <MenuItem href='/UnderMaintenance'>Customer Level</MenuItem>
+        <MenuItem href='/CustomerLevel'>Customer Level</MenuItem>
         <MenuItem href='/Coindetails'>Coins Detail</MenuItem>
         <MenuItem href='/UnderMaintenance'>Withdraw Status</MenuItem>
         <MenuItem href='/UnderMaintenance'>Grade Achievers</MenuItem>

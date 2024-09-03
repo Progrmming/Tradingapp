@@ -6,8 +6,12 @@ import Typography from '@mui/material/Typography'
 import Button from '@mui/material/Button'
 import { useEffect, useState } from 'react'
 
+
+
 const Award = () => {
   const [Userinfo, setUserinfo] = useState({})
+
+
   useEffect(() => {
       const data  = localStorage.getItem('Userinfo')
       setUserinfo(JSON.parse(data))
@@ -27,7 +31,7 @@ const Award = () => {
           </Typography>
           <Typography>78% of target 🚀</Typography> 
         </div>
-        <Button size='small' variant='contained'>
+        <Button href='/CustomerLevel' size='small' variant='contained'>
           View Tree
         </Button>
         {/* <img
