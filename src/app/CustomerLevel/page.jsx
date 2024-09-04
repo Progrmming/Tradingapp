@@ -1,74 +1,72 @@
 import React from 'react'
-
+import './customerlevel.css'
 function CustomerLevel() {
   return (
     <div style={{width:"100%"}} >
 
-<div class="tree" style={{width:"100%"}} >
-        <ul >
+<div class="container">
+    <h1 class="level-1 rectangle">Node 1 </h1>
+    <ol class="level-2-wrapper">
+      <li>
+        <h2 class="level-2 rectangle">Node 2</h2>
+        <ol class="level-3-wrapper">
           <li>
-            <a href="#">Node1<br />(A)</a>
-            <ul>
+            <h3 class="level-3 rectangle">Node 4</h3>
+            <ol class="level-4-wrapper">
               <li>
-                <a href="#">Node2<br />(B)</a>
-                <ul>
-                  <li>
-                    <a href="#">Node 2.1<br />(D)</a>
-                    <ul>
-                      <li>
-                        <a href="#">Node 2.1.1<br />(H)</a>
-                      </li>
-                      <li>
-                        <a href="#">Node 2.1.2<br />(I)</a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <a href="#">Node 2.2<br />(E)</a>
-                    <ul>
-                      <li>
-                        <a href="#">Node 2.2.1<br />(J)</a>
-                      </li>
-                      <li>
-                        <a href="#">Node 2.2.2<br />(K)</a>
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
+                <h4 class="level-4 rectangle">Person A</h4>
               </li>
               <li>
-                <a href="#">Node 3<br />(C)</a>
-                <ul>
-                  <ul>
-                    <li>
-                      <a href="#">Node 3.1<br />(F)</a>
-                      <ul>
-                        <li>
-                          <a href="#">Node 3.1.1<br />(K)</a>
-                        </li>
-                        <li>
-                          <a href="#">Node 3.1.2<br />(L)</a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      <a href="#">Node 3.2<br />(G)</a>
-                      <ul>
-                        <li>
-                          <a href="#">Node 3.2.1<br/>(M)</a>
-                        </li>
-                        <li>
-                          <a href="#">Node 3.2.2<br/>(N)</a>
-                        </li>
-                      </ul>
-                    </li>
-                  </ul>
-                </ul>
+                <h4 class="level-4 rectangle">Person B</h4>
               </li>
-            </ul>
+             
+            </ol>
           </li>
-        </ul>
-      </div>  
+          <li>
+            <h3 class="level-3 rectangle">Node 5 </h3>
+            <ol class="level-4-wrapper">
+              <li>
+                <h4 class="level-4 rectangle">Person A</h4>
+              </li>
+              <li>
+                <h4 class="level-4 rectangle">Person B</h4>
+              </li>
+           
+            </ol>
+          </li>
+        </ol>
+      </li>
+      <li>
+        <h2 class="level-2 rectangle">Node 3 </h2>
+        <ol class="level-3-wrapper">
+          <li>
+            <h3 class="level-3 rectangle">Node 6 </h3>
+            <ol class="level-4-wrapper">
+              <li>
+                <h4 class="level-4 rectangle">Person A</h4>
+              </li>
+              <li>
+                <h4 class="level-4 rectangle">Person B</h4>
+              </li>
+            
+            </ol>
+          </li>
+          <li>
+            <h3 class="level-3 rectangle">Node 7 </h3>
+            <ol class="level-4-wrapper">
+              <li>
+                <h4 class="level-4 rectangle">Person A</h4>
+              </li>
+              <li>
+                <h4 class="level-4 rectangle">Person B</h4>
+              </li>
+              
+            </ol>
+          </li>
+        </ol>
+      </li>
+    </ol>
+  </div>
     </div>
   )
 }
