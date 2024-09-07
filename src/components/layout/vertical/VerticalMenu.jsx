@@ -109,7 +109,7 @@ const userinfos = JSON.parse(localStorage.getItem("Userinfo"))
      
         <MenuItem href='/CustomerLevel'>Customer Level</MenuItem>
         <MenuItem href='/Coindetails'>Coins Detail</MenuItem>
-        <MenuItem href='/UnderMaintenance'>Tree Structure</MenuItem>
+        <MenuItem href='/Home'>Tree Structure</MenuItem>
   
         <MenuItem href='/'>Logout</MenuItem>
         </> 
@@ -118,7 +118,7 @@ const userinfos = JSON.parse(localStorage.getItem("Userinfo"))
         <MenuItem href='/newRegistration'>New Registration</MenuItem>
         <MenuItem href='/CustomerLevel'>Customer Level</MenuItem>
         <MenuItem href='/Coindetails'>Coins Detail</MenuItem>
-        <MenuItem href='/UnderMaintenance'>Withdraw Status</MenuItem>
+        <MenuItem href='/Home'>Withdraw Status</MenuItem>
         <MenuItem href='/UnderMaintenance'>Grade Achievers</MenuItem>
         <MenuItem href='/'>Logout</MenuItem>
         </>
