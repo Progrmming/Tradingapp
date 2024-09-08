@@ -2,9 +2,8 @@ import React from 'react'
 import image from "../../../public/logo.jpg"
 import './Homescr.css'
 import Button from '@mui/material/Button'
-import NextLink from 'next/link'
 import Link from 'next/link'
-import Image from 'next/image'
+
 function Page() {
   return (
     <div>

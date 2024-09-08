@@ -40,8 +40,8 @@ Getlevel()
 <div class="container">
 {treecollection.length === 1 ? (
   <>
-  {treecollection.slice(0,1).map((data) => (
-    <h1 class="level-1 rectangle">{data.firstName} {data.RegistrationNumber} </h1>
+  {treecollection.slice(0,1).map((data, index) => (
+    <h1 class="level-1 rectangle" key ={index}>{data.firstName} {data.RegistrationNumber} </h1>
      ))}
   </>
 ):
@@ -55,8 +55,8 @@ Getlevel()
       <li>
       {treecollection.length > 1 ? (
   <>
-  {treecollection.slice(1,2).map((data) => (
-    <h1 class="level-2 rectangle">{data.firstName} - {data.RegistrationNumber} </h1>
+  {treecollection.slice(1,2).map((data,index) => (
+    <h1 class="level-2 rectangle" key ={index}>{data.firstName} - {data.RegistrationNumber} </h1>
      ))}
   </>
 ):
@@ -97,8 +97,8 @@ Getlevel()
         {/* <h2 class="level-2 rectangle">Node 3 </h2> */}
        {treecollection.length > 2 ? (
   <>
-  {treecollection.slice(2,3).map((data) => (
-    <h1 class="level-2 rectangle">{data.firstName} - {data.RegistrationNumber} </h1>
+  {treecollection.slice(2,3).map((data,index) => (
+    <h1 class="level-2 rectangle" key ={index}>{data.firstName} - {data.RegistrationNumber} </h1>
      ))}
   </>
 ):
