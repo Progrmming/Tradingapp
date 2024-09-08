@@ -8,10 +8,10 @@ import '@/app/globals.css'
 import '@assets/iconify-icons/generated-icons.css'
 
 export const metadata = {
-  title: 'Trading',
+  title: 'VPower-International',
   description:
-    'Develop next-level web apps with Materio Dashboard Free - NextJS. Now, updated with lightning-fast routing powered by MUI and App router.'
-}
+'VPower-International'
+  }
 
 const RootLayout = ({ children }) => {
   // Vars

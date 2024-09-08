@@ -60,10 +60,11 @@ const userinfos = JSON.parse(localStorage.getItem("Userinfo"))
         renderExpandedMenuItemIcon={{ icon: <i className='ri-circle-line' /> }}
         menuSectionStyles={menuSectionStyles(theme)}
       >
-        <SubMenu
+        <SubMenu 
+         
           label='Dashboards'
           icon={<i className='ri-home-smile-line' />}
-          suffix={<Chip label='5' size='small' color='error' />}
+          suffix={<Chip label='5' size='small' color='error' />} 
         >
           {/* <MenuItem
             href={`${process.env.NEXT_PUBLIC_PRO_URL}/dashboards/crm`}
@@ -107,9 +108,9 @@ const userinfos = JSON.parse(localStorage.getItem("Userinfo"))
         {Userinfo.UserType === 'User'  ?  (
           <>
      
-        <MenuItem href='/CustomerLevel'>Customer Level</MenuItem>
+         <MenuItem href='/CustomerLevel'>Customer Level</MenuItem> 
         <MenuItem href='/Coindetails'>Coins Detail</MenuItem>
-        <MenuItem href='/Home'>Tree Structure</MenuItem>
+        {/* <MenuItem href='/Home'>Tree Structure</MenuItem> */}
   
         <MenuItem href='/'>Logout</MenuItem>
         </> 
@@ -117,10 +118,11 @@ const userinfos = JSON.parse(localStorage.getItem("Userinfo"))
         <> 
         <MenuItem href='/newRegistration'>New Registration</MenuItem>
         <MenuItem href='/CustomerLevel'>Customer Level</MenuItem>
-        <MenuItem href='/Coindetails'>Coins Detail</MenuItem>
+        {/* <MenuItem href='/Coindetails'>Coins Detail</MenuItem>
         <MenuItem href='/Home'>Withdraw Status</MenuItem>
-        <MenuItem href='/UnderMaintenance'>Grade Achievers</MenuItem>
-        <MenuItem href='/'>Logout</MenuItem>
+        <MenuItem href='/UnderMaintenance'>Grade Achievers</MenuItem> */}
+
+        <MenuItem href='/'>Logout</MenuItem> 
         </>
         }
 

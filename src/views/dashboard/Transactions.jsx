@@ -12,27 +12,27 @@ import CustomAvatar from '@core/components/mui/Avatar'
 // Vars
 const data = [
   {
-    stats: '245k',
-    title: 'Sales',
+    stats: '50',
+    title: ' Bonus',
     color: 'primary',
     icon: 'ri-pie-chart-2-line'
   },
   {
-    stats: '12.5k',
-    title: 'Users',
+    stats: '0',
+    title: 'Level',
     color: 'success',
     icon: 'ri-group-line'
   },
   {
-    stats: '1.54k',
+    stats: '50',
     color: 'warning',
-    title: 'Products',
+    title: 'Total',
     icon: 'ri-macbook-line'
   },
   {
-    stats: '$88k',
+    stats: '0',
     color: 'info',
-    title: 'Revenue',
+    title: 'Widthdraw',
     icon: 'ri-money-dollar-circle-line'
   }
 ]
@@ -45,8 +45,8 @@ const Transactions = () => {
         action={<OptionMenu iconClassName='text-textPrimary' options={['Refresh', 'Share', 'Update']} />}
         subheader={
           <p className='mbs-3'>
-            <span className='font-medium text-textPrimary'>Total 48.5% Growth 😎</span>
-            <span className='text-textSecondary'>this month</span>
+            <span className='font-medium text-textPrimary'>Coin Details</span>
+            {/* <span className='text-textSecondary'>Coin Details</span> */}
           </p>
         }
       />

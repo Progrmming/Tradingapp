@@ -28,6 +28,7 @@ export default function RegistrationModal() {
         {lable:"Admin", value:"Admin"},
         {lable:"User", value:"User"}
     ])
+    const [collectionofuserhelp, setcollectionofuserhelp] = useState([])
     const [registrations, setRegistrations] = useState([]);
     const [formData, setFormData] = useState({
         registrationNumber: "1000",
@@ -43,7 +44,7 @@ export default function RegistrationModal() {
         state: "",
         country: "",
         pinCode: "",
-        usertype:""
+        usertype:"User"
     });
 
     const [errors, setErrors] = useState({});
@@ -70,7 +71,8 @@ export default function RegistrationModal() {
             state: "",
             country: "",
             pinCode: "", 
-            usertype: ""
+            usertype: "User",
+            Parentid: 0
         });
         setErrors({});
     };
@@ -169,7 +171,8 @@ export default function RegistrationModal() {
             state: registrations[index].State,
             country: registrations[index].Country,
             pinCode: registrations[index].PinCode,
-            usertype:registrations[index].UserType
+            usertype:registrations[index].UserType,
+            Parentid: 0,
         });
         
         setEditMode(true);
@@ -204,6 +207,13 @@ export default function RegistrationModal() {
         }).then((res) => res.json()).then((data) => {
             console.log(data.result);
             setRegistrations(data.result);
+            const collectionvalue  = data.result.filter((dat) => dat.UserType !== 'Admin').map((Data) => ({
+                lable:Data.FirstName,
+                value:Data.RegistrationId
+
+            }))
+            setcollectionofuserhelp(collectionvalue)
+
         });
     };
 
@@ -436,6 +446,26 @@ export default function RegistrationModal() {
        
         <MenuItem value={"Admin"}>Admin</MenuItem>
         <MenuItem value={"User"}>User</MenuItem>
+      
+      </Select>
+    </FormControl>
+                            </Grid>
+                             <Grid item xs={12} sm={6}>
+                            <FormControl sx={{ m: 1, minWidth: 120 }} size="small">
+      <InputLabel id="demo-select-small-label">Parent id</InputLabel>
+      <Select
+        labelId="demo-select-small-label"
+        id="demo-select-small"
+        value={formData.Parentid}
+        label="Parentid"
+        onChange={handleChange}
+        name="Parentid"
+      >
+         {collectionofuserhelp.map((u) => (
+ <MenuItem value={u.value}>{u.lable}</MenuItem>
+
+         ))}
+       
       
       </Select>
     </FormControl>

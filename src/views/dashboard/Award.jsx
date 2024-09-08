@@ -21,16 +21,16 @@ const Award = () => {
     <Card>
       <CardContent className='flex flex-col gap-2 relative items-start'>
         <div>
-          <Typography variant='h5'>Congratulations 
+          <Typography variant='h5'>Welcome 
           {} {Userinfo.FirstName} 🎉</Typography>
-          <Typography>Best seller of the month</Typography> 
+          {/* <Typography>Best seller of the month</Typography>  */}
         </div>
-        <div>
+        {/* <div>
           <Typography variant='h4' color='primary'>
             $42.8k
           </Typography>
           <Typography>78% of target 🚀</Typography> 
-        </div>
+        </div> */}
         <Button href='/CustomerLevel' size='small' variant='contained'>
           View Tree
         </Button>

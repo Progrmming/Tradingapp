@@ -51,6 +51,7 @@ export async function POST(request) {
             country,
             pinCode,
             usertype,
+            Parentid
         } = data;
 
         if (!registrationNumber || !firstName || !lastName || !emailId || !phoneNumber) {
@@ -67,22 +68,22 @@ export async function POST(request) {
             `INSERT INTO TblRegistration  (
                UserType, registrationNumber, FirstName, MiddleName, LastName, EmailId,
                 PhoneNumber, AadharNumber, PanNumber, Address1, Address2, State,
-                Country, PinCode, Password, CreatedDate
-            ) VALUES (?, ? , ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 123456, NOW())`,
+                Country, PinCode,Parentid, Password, CreatedDate
+            ) VALUES (?, ? , ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 123456, NOW())`,
             [
                 usertype, 12, firstName, middleName, lastName, emailId,
                 phoneNumber, aadharNumber, panNumber, address1, address2, state,
-                country, pinCode
+                country, pinCode,Parentid
             ]
         );
         console.log(result,"result")
         const registrationId = result.insertId;
         const registrationNumbers = `VPIN${registrationId}`;
-
+        const Groupdid =1000 + registrationId
 
         await connection.execute(
-            `UPDATE TblRegistration SET RegistrationNumber = ? WHERE RegistrationId = ?`,
-            [registrationNumbers, registrationId]
+            `UPDATE TblRegistration SET RegistrationNumber = ?, Groupid = ? WHERE RegistrationId = ?`,
+            [registrationNumbers, Groupdid, registrationId]
         );
 
         await connection.end();
