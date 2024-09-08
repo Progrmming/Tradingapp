@@ -9,6 +9,7 @@ function CustomerLevel() {
 
 
   useEffect(() => {
+    Getlevel()
       const data  = localStorage.getItem('Userinfo')
       setUserinfo(JSON.parse(data))
       console.log(JSON.parse(data).RegistrationId)
@@ -29,9 +30,7 @@ const Getlevel = async() => {
 }
 
 
-useEffect(() => {
-Getlevel()
-}, [])
+
 
 
   return (

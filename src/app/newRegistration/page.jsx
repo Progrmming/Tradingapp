@@ -461,8 +461,8 @@ export default function RegistrationModal() {
         onChange={handleChange}
         name="Parentid"
       >
-         {collectionofuserhelp.map((u) => (
- <MenuItem value={u.value}>{u.lable}</MenuItem>
+         {collectionofuserhelp.map((u, index) => (
+ <MenuItem value={u.value} key={index}>{u.lable}</MenuItem>
 
          ))}
        
