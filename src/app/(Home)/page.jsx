@@ -20,7 +20,7 @@ function Page() {
          /> 
          
         </div>
-        <nav>
+        {/* <nav>
             <a href="#">Home</a>
             <a href="#">About</a>
           
@@ -28,7 +28,7 @@ function Page() {
             <a href="#">Pricing</a>
          
             <a href="#">Contact</a>
-        </nav>
+        </nav> */}
        
      
     </header>
